@@ -18,14 +18,6 @@ loginbutton.addEventListener("click", (evt)=>{
     loginpage.style.zIndex="1";
 });
 
-window.onclick = (evt) => {
-    evt.preventDefault();
-    if(evt.target==loginpage){
-        loginpage.style.display="none";
-        quote.style.position="absolute";
-    }
-};
-
 closebutton.addEventListener("click",(evt)=>{
     evt.preventDefault();
     loginpage.style.display="none";
@@ -36,11 +28,4 @@ bars.addEventListener("click",(evt)=>{
     evt.preventDefault();
     dropdown.style.display="block";
 });
-
-window.onclick = (evt) =>{
-    evt.preventDefault();
-    if(evt.target==container || evt.target==bars){
-        dropdown.style.display="none";
-    }
-}
 
